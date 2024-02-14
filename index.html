@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Stinky!</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="animate-charcter"> Happy Valentine Sayangg :O </h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="container2">
+        <a href="flower.html">
+            <div class="heart-like-button"></div>
+        </a>
+
+        <div class="click">
+            Click the hearts!!
+        </div>
+    </div>
+
+    <script>
+        const button = document.querySelector(".heart-like-button");
+
+        button.addEventListener("click", () => {
+            if (button.classList.contains("liked")) {
+                button.classList.remove("liked");
+            } else {
+                button.classList.add("liked");
+            }
+        });
+    </script>
+</body>
+
+</html>
